@@ -69,6 +69,27 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    padding: 0;
+
+    animation: shake .2s;
+}
+
+.nav-content {
+    display: flex;
+    margin: 15px 0 40px 0;
+}
+
+.nav-content .nav-bar {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nav-content .nav-bar .nav-item {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
 .top-content {
@@ -79,10 +100,19 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content .jumbo-image {
+    margin-bottom: 22px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container-about {
+    width: 100%;
+    padding: 0 0 20px 20px;
 }
 
 .middle-content {
@@ -90,7 +120,12 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.middle-content-about {
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.middle-content .indent {
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -101,15 +136,55 @@ p {
     justify-content: space-evenly;
 }
 
+.middle-content .about-boxes {
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .about-box {
+    margin: 20px 0;
+    width: 48%;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content .boxes .about-box .box-img {
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.middle-content .boxes .about-box .box-paragraph {
+    margin: 10px 0 20px 0;
+}
+
+.middle-content .boxes .about-box .learn-more-button {
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 9px 22px;
+    margin-bottom: 20px;
+
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.middle-content .boxes .about-box .learn-more-button:hover {
+    background: black;
+    color: white;
+
+    animation: shake .2s;
 }
 
 .bottom-content {
@@ -143,4 +218,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes shake {
+    10%,90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%,80% {
+        transform: translate3d(4px, 0, 0);
+    }
+
+    30%,50%,70% {
+        transform: translate3d(-6px, 0, 0);
+    }
+
+    40%,60% {
+        transform: translate3d(6px, 0, 0);
+    }
 }
