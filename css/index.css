@@ -110,7 +110,7 @@ p {
 
 .top-content .text-container-about {
     width: 100%;
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
 }
 
 .middle-content {
@@ -118,7 +118,12 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.middle-content-about {
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.middle-content .indent {
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -127,6 +132,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.middle-content .about-boxes {
+    margin: 0 10px;
+    justify-content: space-between;
 }
 
 .middle-content .boxes .box {
@@ -139,6 +149,33 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .about-box {
+    margin: 20px 0;
+    width: 48%;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content .boxes .about-box .box-img {
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.middle-content .boxes .about-box .box-paragraph {
+    margin: 10px 0 20px 0;
+}
+
+.middle-content .boxes .about-box .learn-more-button {
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 9px 22px;
+    margin-bottom: 20px;
+
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .bottom-content {
