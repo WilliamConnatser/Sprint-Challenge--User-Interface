@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/WilliamConnatser/Sprint-Challenge--User-Interface/issues"
   },
-  "homepage": "https://github.com/WilliamConnatser/Sprint-Challenge--User-Interface#readme"
+  "homepage": "https://github.com/WilliamConnatser/Sprint-Challenge--User-Interface#readme",
+  "dependencies": {}
 }
